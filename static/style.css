@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.header a img {
+    height: 10rem;
+}
+.hero-container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    border-radius: 22px;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 24px #d9d9d9, -6px -6px 24px #e7e7e7;
+}
+.column {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+}
+.stocks-buttons {
+    background: #e0e0e0;
+    height: 50vh;
+    padding: 5rem 0;
+    margin-top: 5rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 24px #d9d9d9, -6px -6px 24px #e7e7e7;
+}
+.stocks-buttons h2 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.button-container {
+    margin-top: 2.5rem;
+    width: 100%;
+    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: inline-block;
+    width: 15rem;
+    margin: 0 auto;
+    height: 3.5rem;
+    border-radius: 1.5rem;
+    font-size:large;
+    font-weight: 250;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
