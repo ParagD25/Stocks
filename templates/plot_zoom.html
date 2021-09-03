@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block title%}
+<title>Zoom Stock</title>
+{%endblock%}
+
+{%block body%}
+
+<h1 align='center'>Zoom Video Communications Stock Analysis</h1>
+<link rel="stylesheet" href={{cdn_css_file | safe}} type="text/css" />
+<script type="text/javascript" src={{cdn_js_file | safe}}></script>
+
+
+{{x | safe}}
+{{y | safe}}
+
+{%endblock%}
