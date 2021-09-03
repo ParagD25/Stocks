@@ -1,12 +1,18 @@
-<html>
-    <head>
-        <title>Google Stock</title>
-    </head>
-    <body>
-        <link rel="stylesheet" href={{cdn_css_file | safe}} type="text/css" />
-        <script type="text/javascript" src={{cdn_js_file | safe}}></script>
-        <h1>Google Stock Analysis</h1>
-        {{x | safe}}
-        {{y | safe}}
-    </body>
-</html>
+{%extends 'base.html'%}
+
+{%block title%}
+<title>Google Stock</title>
+{%endblock%}
+
+{%block body%}
+
+<h1 align='center'>Google Stock Analysis</h1>
+<div class="stock-chart">
+<link rel="stylesheet" href={{cdn_css_file | safe}} type="text/css" />
+<script type="text/javascript" src={{cdn_js_file | safe}}></script>
+</div>
+
+{{x | safe}}
+{{y | safe}}
+
+{%endblock%}
