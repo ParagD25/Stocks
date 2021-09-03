@@ -35,7 +35,7 @@ def google():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Google Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -78,7 +78,7 @@ def facebook():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Facebook Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -118,7 +118,7 @@ def apple():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Apple Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -158,7 +158,7 @@ def microsoft():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Microsoft Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -171,8 +171,8 @@ def microsoft():
 
     return render_template("plot_microsoft.html",x=x,y=y,cdn_js_file=cdn_js_file,cdn_css_file=cdn_css_file)
 
-@app.route('/tata/')
-def tata():
+@app.route('/zoom/')
+def zoom():
     import datetime
     from pandas_datareader import data
     from bokeh.plotting import figure
@@ -181,7 +181,7 @@ def tata():
     
     stock_first=datetime.datetime(2021,1,1)
     stock_last=datetime.datetime.now()
-    df=data.DataReader(name="TATAMOTORS",data_source="yahoo",start=stock_first,end=stock_last)
+    df=data.DataReader(name="ZM",data_source="yahoo",start=stock_first,end=stock_last)
 
     def stock_stats(open,close):
         if open>close:
@@ -198,7 +198,7 @@ def tata():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Tata Motors Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -209,7 +209,7 @@ def tata():
     cdn_js_file=CDN.js_files[0]
     cdn_css_file=CDN.css_files
 
-    return render_template("plot_tata.html",x=x,y=y,cdn_js_file=cdn_js_file,cdn_css_file=cdn_css_file)
+    return render_template("plot_zoom.html",x=x,y=y,cdn_js_file=cdn_js_file,cdn_css_file=cdn_css_file)
 
 @app.route('/volks/')
 def volkswagen():
@@ -221,7 +221,7 @@ def volkswagen():
     
     stock_first=datetime.datetime(2021,1,1)
     stock_last=datetime.datetime.now()
-    df=data.DataReader(name="VOW3",data_source="yahoo",start=stock_first,end=stock_last)
+    df=data.DataReader(name="VWAGY",data_source="yahoo",start=stock_first,end=stock_last)
 
     def stock_stats(open,close):
         if open>close:
@@ -238,7 +238,7 @@ def volkswagen():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1500,plot_height=750,title="Volkswagen Group Stock")
+    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
