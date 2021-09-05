@@ -1,8 +1,32 @@
-<html>
-    <head>
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Home Page</h1>
-    </body>
-</html>
+{%extends 'base.html'%}
+
+{%block title%}
+<title>Stocks</title>
+{%endblock%}
+
+{%block body%}
+<div class="container hero-container">
+    <div class="column">
+        <div class="row"><p>The High is the highest price at which a stock traded during a period.</p></div>
+        <div class="row"><p>The Low is the lowest price at which a stock trades over the course of a trading day.</p></div>
+        <div class="row"><p>The Open is the starting period of trading on a securities exchange or organized over-the-counter market.</p></div>
+        <div class="row"><p>The Close is a reference to the end of a trading session in the financial markets when the markets close for the day.</p></div>
+    </div>
+    <div class="img-container">
+        <img src="../static/chart.jpeg" alt="Chart">
+    </div>
+</div>
+
+<div class="container stocks-buttons">
+    <h2>Check Stocks</h2>
+    <div class="button-container">
+        <a type="button" class="btn btn-danger button" href="{{url_for('google')}}">Google</a>
+        <a type="button" class="btn btn-danger button" href="{{url_for('microsoft')}}">Microsoft</a>
+        <a type="button" class="btn btn-danger button" href="{{url_for('apple')}}">Apple</a>
+        <a type="button" class="btn btn-danger button" href="{{url_for('facebook')}}">Facebook</a>
+        <a type="button" class="btn btn-danger button" href="{{url_for('zoom')}}">Zoom</a>
+        <a type="button" class="btn btn-danger button" href="{{url_for('volkswagen')}}">Volkswagen</a>
+    </div>
+</div>
+<br><br>
+{%endblock%}
