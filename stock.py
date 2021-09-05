@@ -35,7 +35,7 @@ def google():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -78,7 +78,7 @@ def facebook():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -118,7 +118,7 @@ def apple():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -158,7 +158,7 @@ def microsoft():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -198,7 +198,7 @@ def zoom():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
@@ -238,7 +238,7 @@ def volkswagen():
 
     time_data=12*60*60*1000
 
-    candle=figure(x_axis_type='datetime',plot_width=1900,plot_height=660)
+    candle=figure(x_axis_type='datetime',plot_width=2110,plot_height=675)
     candle.grid.grid_line_alpha=0.5
 
     candle.segment(df.index,df.High,df.index,df.Low,color='black')
