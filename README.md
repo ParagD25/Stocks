@@ -49,14 +49,14 @@ OR
 <p align="center">
   <img src="https://github.com/ParagD25/Stocks/blob/master/Images/panel.png" alt="Heroku Product" width="50%">
 </p>
-<p>
-- <b>Pan</b> - <br>
-- <b>Zoom Box</b> - <br>
-- <b>Wheel Zoom</b> - <br>
-- <b>Save</b> - <br>
-- <b>Reset</b> - <br>
-- <b>Learn</b> - <br>
-</p>
+<br>
+<li> <b>Pan</b> - Move around entire graph.<br> </li>
+<li> <b>Zoom Box</b> - Zoom selected area of a graph<br> </li>
+<li> <b>Wheel Zoom</b> - Zoom In/ Zoom Out entire Graph content<br> </li>
+<li> <b>Save</b> - To save the garph<br> </li>
+<li> <b>Reset</b> - Reset to default zoom<br> </li>
+<li> <b>Learn</b> - Learn about Bokeh<br> </li>
+
 
 ## Contributing ©️:
 
