@@ -33,6 +33,30 @@ A web application where one can check data related to stocks (i.e. High Price, L
 OR
 - Visit `https://bull-stockanalysis.herokuapp.com/`
 
+## Screenshots 📷:
+
+<h3 align="center">Check Stocks of the following companies:</h3>
+<p align="center">
+  <img src="https://github.com/ParagD25/Stocks/blob/master/Images/list_stocks.png" alt="Heroku stocks list" width="75%">
+</p>
+
+<h3 align="center">Candlestick Chart</h3>
+<p align="center">
+  <img src="https://github.com/ParagD25/Stocks/blob/master/Images/stock.gif" alt="Heroku candlestick chart" width="100%">
+</p>
+
+<h3 align="center">Panel present beside the Graph</h3>
+<p align="center">
+  <img src="https://github.com/ParagD25/Stocks/blob/master/Images/panel.png" alt="Heroku Product" width="50%">
+</p>
+<p>
+- <b>Pan</b> - <br>
+- <b>Zoom Box</b> - <br>
+- <b>Wheel Zoom</b> - <br>
+- <b>Save</b> - <br>
+- <b>Reset</b> - <br>
+- <b>Learn</b> - <br>
+</p>
 
 ## Contributing ©️:
 
